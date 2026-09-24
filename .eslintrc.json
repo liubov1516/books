@@ -1,0 +1,11 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "env": { "browser": true, "node": true, "mocha": true, "es2020": true },
+  "overrides": [
+    { "files": ["src/utils/validators.ts"], "rules": { "@typescript-eslint/no-namespace": "off" } }
+  ],
+  "ignorePatterns": ["dist", "node_modules"]
+}
